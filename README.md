@@ -1,2 +1,1 @@
 # codewars
-Created with CodeSandbox
