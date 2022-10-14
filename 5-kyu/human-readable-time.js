@@ -12,14 +12,14 @@ You can find some examples in the test fixtures.
  */
 
 function humanReadable(secondsIn) {
-  const pad = function (val) {
-    return val < 10 ? "0" + val : val;
-  };
+	const pad = function (val) {
+		return val < 10 ? "0" + val : val;
+	};
 
-  const sec = parseInt(secondsIn, 10); // convert value to number if it's string
-  let hours = Math.floor(sec / 3600); // get hours
-  let minutes = Math.floor((sec - hours * 3600) / 60); // get minutes
-  let seconds = sec - hours * 3600 - minutes * 60; //  get seconds
+	const sec = parseInt(secondsIn, 10); // convert value to number if it's string
+	let hours = Math.floor(sec / 3600); // get hours
+	let minutes = Math.floor((sec - hours * 3600) / 60); // get minutes
+	let seconds = sec - hours * 3600 - minutes * 60; //  get seconds
 
-  return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+	return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
 }
