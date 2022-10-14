@@ -10,16 +10,16 @@
     Invalid characters should be ignored.
  */
 function parse(data) {
-  let res = [];
+    let res = [];
 
-  data.split("").reduce((cur, s) => {
-    if (s === "i") cur++;
-    if (s === "d") cur--;
-    if (s === "s") cur = Math.pow(cur, 2);
-    if (s === "o") res.push(cur);
+    data.split("").reduce((cur, s) => {
+        if (s === "i") cur++;
+        if (s === "d") cur--;
+        if (s === "s") cur = Math.pow(cur, 2);
+        if (s === "o") res.push(cur);
 
-    return cur;
-  }, 0);
+        return cur;
+    }, 0);
 
-  return res;
+    return res;
 }
