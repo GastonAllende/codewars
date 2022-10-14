@@ -12,6 +12,6 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
  */
 
 function arrayDiff(a, b) {
-  if (b.length === 0) return a
-  return a.filter(x => !b.includes(x))
+	if (b.length === 0) return a
+	return a.filter(x => !b.includes(x))
 }
